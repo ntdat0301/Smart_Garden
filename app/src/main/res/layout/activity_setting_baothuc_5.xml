@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alarm_background"
+    tools:context=".Setting_baothuc_5">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/noto_sans_cjk_jp_bold"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Năm    :"
+
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:fontFamily="@font/noto_sans_cjk_jp_bold"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Tháng :"
+        android:textColor="#000000"
+
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:fontFamily="@font/noto_sans_cjk_jp_bold"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Ngày   :"
+        android:textColor="#000000"
+
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:fontFamily="@font/noto_sans_cjk_jp_bold"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Giờ       :"
+        android:textColor="#000000"
+
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:fontFamily="@font/noto_sans_cjk_jp_bold"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Phút    :"
+        android:textColor="#000000"
+
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/noto_sans_cjk_jp_bold"
+        android:text="CÀI ĐẶT BÁO THỨC"
+
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_Setting_Alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_button_baothuc"
+        android:padding="10sp"
+        android:text="ĐẶT BÁO THỨC"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/edt_Year"
+        android:layout_width="168sp"
+        android:layout_height="59dp"
+        android:ems="10"
+
+        android:gravity="center"
+        android:hint="năm"
+        android:inputType="number"
+        android:padding="10sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toTopOf="@+id/textView22"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/edt_Month"
+        android:layout_width="168sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+
+        android:hint="tháng"
+        android:inputType="number"
+        android:padding="10sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="@+id/textView23"
+        tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+    <EditText
+        android:id="@+id/edt_Day"
+        android:layout_width="168sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+
+        android:hint="ngày"
+        android:inputType="number"
+        android:padding="10sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@+id/textView24"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.562"
+        tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+    <EditText
+        android:id="@+id/edt_Hour"
+        android:layout_width="168sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="giờ"
+        android:padding="10sp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/edt_Minute"
+        android:layout_width="168sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="phút"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="10sp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView26"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toTopOf="@+id/textView26"
+        tools:ignore="Autofill,HardcodedText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

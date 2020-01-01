@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=
+    "http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_1">
+
+    <EditText
+        android:id="@+id/edt_User"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/text_userpass"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/noto_sans_cjk_jp_bold"
+        android:hint="Địa chỉ email"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/edt_Pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/text_userpass"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/noto_sans_cjk_jp_bold"
+        android:hint="Mật khẩu"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_User"
+        app:layout_constraintStart_toStartOf="@+id/edt_User"
+        app:layout_constraintTop_toBottomOf="@+id/edt_User"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,UnusedAttribute" />
+
+    <CheckBox
+        android:id="@+id/check_Remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/noto_sans_cjk_jp_bold"
+        android:text="Ghi nhớ"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/edt_Pass"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Pass"
+        tools:ignore="HardcodedText,MissingConstraints,UnusedAttribute" />
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_login"
+        android:fontFamily="@font/noto_sans_cjk_jp_bold"
+        android:text="Đăng nhập"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_Remember"
+        tools:ignore="HardcodedText,SpUsage,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/txt_Forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/noto_sans_cjk_jp_bold"
+        android:text="Quên mật khẩu"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Login"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/txt_CreatAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/noto_sans_cjk_jp_bold"
+        android:text="Tạo tài khoản mới"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="64sp"
+        android:layout_height="64sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bkmaker"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="198dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/tahoma"
+        android:gravity="center"
+        android:text="HỆ THỐNG TƯỚI NHỎ GIỌT"
+        android:textColor="#148D2F"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="136sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="71dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="64sp"
+        android:layout_height="64sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:srcCompat="@drawable/khoadien"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

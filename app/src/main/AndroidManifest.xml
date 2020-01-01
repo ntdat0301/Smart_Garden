@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.smart_farm">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_ok"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".Setting_baothuc_5" />
+        <activity android:name=".Control_A_Valve_4" />
+        <activity android:name=".Add_Device_2_1" />
+        <activity android:name=".Register_1_1" />
+        <activity android:name=".SettingParameter_3_3" />
+        <activity android:name=".Baothuc_4_3" />
+        <activity android:name=".All_Valve_3_1" />
+        <activity android:name=".Device_details_3" />
+        <activity android:name=".List_Device_2" />
+        <activity android:name=".Login_1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

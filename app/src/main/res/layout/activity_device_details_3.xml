@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/technology"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Device_details_3">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/background_nnn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="126dp"
+                    android:layout_height="78dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/noto_sans_cjk_jp_bold"
+                    android:gravity="center"
+                    android:text="Chi tiết các luống cây"
+                    android:textColor="#0044FF"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/btn_image_Control"
+                    app:layout_constraintStart_toStartOf="@+id/btn_image_Control"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_image_Control"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <TextView
+                    android:id="@+id/textView100"
+                    android:layout_width="118dp"
+                    android:layout_height="80dp"
+                    android:fontFamily="@font/noto_sans_cjk_jp_bold"
+                    android:gravity="center"
+                    android:text="Bật tắt chế độ tự động"
+                    android:textColor="#0044FF"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    app:layout_constraintEnd_toEndOf="@+id/sw_Mode"
+                    app:layout_constraintStart_toStartOf="@+id/sw_Mode"
+                    app:layout_constraintTop_toTopOf="@+id/textView2"
+                    tools:ignore="HardcodedText,MissingConstraints,UnusedAttribute" />
+
+                <ImageButton
+                    android:id="@+id/btn_image_Control"
+                    android:layout_width="130dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/background_button"
+                    android:padding="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/tree"
+                    tools:ignore="ContentDescription" />
+
+                <Switch
+                    android:id="@+id/sw_Mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/background_button"
+                    android:fontFamily="@font/noto_sans_cjk_jp_bold"
+                    android:padding="15dp"
+                    android:scrollbarDefaultDelayBeforeFade="400"
+                    android:switchPadding="10sp"
+                    android:text="Bật/Tắt"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_image_Control"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/btn_image_Control"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/background_nnn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/txt_Humidity_Air"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="32dp"
+                    android:fontFamily="@font/noto_sans_cjk_jp_bold"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="30"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/gauge_humidity_land"
+                    app:layout_constraintEnd_toEndOf="@+id/gauge_humidity_land"
+                    app:layout_constraintStart_toStartOf="@+id/gauge_humidity_land"
+                    tools:ignore="HardcodedText,SpUsage,UnusedAttribute" />
+
+                <pl.pawelkleczkowski.customgauge.CustomGauge
+                    android:id="@+id/gauge_humidity_land"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_below="@+id/gauge1"
+                    android:layout_centerHorizontal="false"
+
+
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="10dp"
+
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+
+                    android:paddingBottom="10dp"
+                    app:gaugeEndValue="100"
+
+                    app:gaugePointEndColor="#E91E63"
+                    app:gaugePointStartColor="#FF0000"
+
+                    app:gaugeStartAngle="180"
+                    app:gaugeStartValue="0"
+                    app:gaugeStrokeCap="ROUND"
+
+                    app:gaugeStrokeColor="#CA7272"
+                    app:gaugeStrokeWidth="13dp"
+                    app:gaugeSweepAngle="180"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3"
+                    tools:ignore="MissingConstraints,UnknownId" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/noto_sans_cjk_jp_bold"
+                    android:text="Môi trường"
+                    android:textColor="#001AFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/gauge_humidity_land"
+                    app:srcCompat="@drawable/temperature"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView4"
+                    app:srcCompat="@drawable/picture_mua"
+                    tools:ignore="ContentDescription,MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="101dp"
+                    android:layout_height="53dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/noto_sans_cjk_jp_bold"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Nhiệt độ môi trường"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                    tools:ignore="HardcodedText,SpUsage,UnusedAttribute" />
+
+                <TextView
+                    android:id="@+id/txt_Weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/noto_sans_cjk_jp_bold"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Nắng"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView5"
+                    app:layout_constraintStart_toStartOf="@+id/imageView5"
+                    app:layout_constraintTop_toTopOf="@+id/textView6"
+                    tools:ignore="HardcodedText,SpUsage,UnusedAttribute" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="120dp"
+                    android:layout_height="53dp"
+                    android:fontFamily="@font/noto_sans_cjk_jp_bold"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Độ ẩm không khí"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/gauge_humidity_land"
+                    app:layout_constraintEnd_toEndOf="@+id/gauge_humidity_land"
+                    app:layout_constraintHorizontal_bias="0.7"
+                    app:layout_constraintStart_toStartOf="@+id/gauge_humidity_land"
+                    app:layout_constraintTop_toTopOf="@+id/textView6"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="HardcodedText,SpUsage,UnusedAttribute" />
+
+                <TextView
+                    android:id="@+id/txt_Temperature_Air"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/noto_sans_cjk_jp_bold"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="30"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="@+id/imageView4"
+                    tools:ignore="HardcodedText,SpUsage,UnusedAttribute" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="°C"
+                    android:fontFamily="@font/noto_sans_cjk_jp_bold"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_Temperature_Air"
+                    app:layout_constraintStart_toEndOf="@+id/txt_Temperature_Air"
+                    app:layout_constraintTop_toTopOf="@+id/txt_Temperature_Air"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/noto_sans_cjk_jp_bold"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="%"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_Humidity_Air"
+                    app:layout_constraintStart_toEndOf="@+id/txt_Humidity_Air"
+                    app:layout_constraintTop_toTopOf="@+id/txt_Humidity_Air"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_namedevice"
+        android:fontFamily="@font/noto_sans_cjk_jp_bold"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Chi tiết thiết bị"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,SpUsage,UnusedAttribute" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

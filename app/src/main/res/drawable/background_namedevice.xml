@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="#1D1F1D"
+    tools:ignore="MissingDefaultResource,NewApi">
+    <item>
+        <shape android:shape="rectangle"
+            tools:ignore="ExtraText">
+            <solid android:color="#6D90FA"/> /* màu nền*/
+            <stroke android:color="#000000"
+                android:width="1dp"/>
+            /* màu viền và độ rộng viền*/
+            <size android:width="64dp"
+                android:height="32dp"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+</ripple>

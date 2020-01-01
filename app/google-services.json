@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "779791935339",
+    "firebase_url": "https://smart-farm-f0b6f.firebaseio.com",
+    "project_id": "smart-farm-f0b6f",
+    "storage_bucket": "smart-farm-f0b6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779791935339:android:351eb1de6cb42c2247ce2e",
+        "android_client_info": {
+          "package_name": "com.example.smart_farm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "779791935339-u48ecak9ak1aoeg3j3pv3dnc668a1alo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnyxE8K3lN7lTcvLr92C7z6Btc3_1198A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "779791935339-u48ecak9ak1aoeg3j3pv3dnc668a1alo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
